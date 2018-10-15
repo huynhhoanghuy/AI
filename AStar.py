@@ -97,7 +97,7 @@ def process(n,map,path,cost,start,goal):
 def write_file(fo,n,start,goal,path2,obtacles):
 	with open(fo,"w+") as out:
 		
-		out.write("len: %d\n" % len(path2))
+		out.write("%d\n" % len(path2))
 		out.write(str(list(path2)))
 		out.write("\n")
 		# print result
