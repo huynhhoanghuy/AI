@@ -107,9 +107,8 @@ def write_file(fo,n,start,goal,path2,obtacles):
         result = [['-' for x in range(n)] for y in range(n)]
 
         if path2 == None:
-            out.write("0")
-            out.write("\nNo path for Start:({0}, {1}) and Goal:({2}, {3})".format(start[0],start[1], goal[0], goal[1]))
-
+            out.write("-1")
+            
         else:
             out.write("%d\n" % len(path2))
             for item in path2:
